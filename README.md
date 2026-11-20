@@ -10,7 +10,7 @@ site/                  ← lo único que se publica
   privacy.html         política de privacidad
   terms.html           términos de uso
   404.html             página de error (GitHub Pages la sirve sola)
-  es/                  versión en español (index, privacy, terms)
+  es/ de/ tr/ it/      español, alemán, turco e italiano (index, privacy, terms)
   assets/style.css     estilos
   assets/favicon.svg   favicon / logo
   assets/og-image.png  imagen para Open Graph (1200×630)
@@ -81,5 +81,6 @@ El sitio usa `hello@glonys.com` (botón "Request early access" y contacto). Aseg
 
 ## Mantenimiento
 
-- Si cambias la política de privacidad o los términos, actualiza la fecha "Last updated" en las dos versiones (EN y ES).
-- Si añades páginas, añádelas también a `site/sitemap.xml` y enlaza su versión en el otro idioma.
+- Idiomas: inglés (raíz), español, alemán, turco e italiano. Cada página lleva `hreflang` hacia sus 5 versiones (más `x-default` = inglés) y un selector de idioma en la cabecera que enlaza a la misma página en los otros idiomas.
+- Si cambias un texto, cámbialo en los 5 idiomas. Si cambias la política de privacidad o los términos, actualiza también la fecha "Last updated" en todas las versiones.
+- Si añades una página, créala en los 5 idiomas, añade sus `hreflang` y su entrada en el selector de cada versión, y añádela a `site/sitemap.xml`.
